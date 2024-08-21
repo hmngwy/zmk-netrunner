@@ -1,0 +1,11 @@
+file_format: "1"
+id: netrunner 
+name: netrunner
+type: shield
+url: https://github.com/hmngwy/netrunner
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+siblings:
+  - netrunner_left
+  - netrunner_right

@@ -1,0 +1,5 @@
+config SHIELD_NETRUNNER_LEFT
+    def_bool $(shields_list_contains,netrunner_left)
+
+config SHIELD_NETRUNNER_RIGHT
+    def_bool $(shields_list_contains,netrunner_right)
