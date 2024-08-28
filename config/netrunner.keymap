@@ -9,7 +9,6 @@
 #define NAV 2
 #define FUN 3
 #define MET 4
-#define LOK 5
 
 &lt {
   tapping-term-ms = <150>;
@@ -71,21 +70,13 @@
 
     meta {
       bindings = <
- &tog LOK     &out OUT_TOG &none        &none         &bt BT_CLR         &none            &none   &none        &none  &none
+ &soft_off   &out OUT_TOG &none        &none         &bt BT_CLR         &none            &none   &none        &none  &soft_off
  &none        &none        &bt BT_SEL 0 &bt BT_SEL 1  &none              &none            &none   &none        &none  &none
  &none        &none        &bootloader  &sys_reset    &ext_power EP_ON   &ext_power EP_ON &sys_reset  &bootloader  &none  &none
                                         &trans        &trans             &trans  &trans
       >;
     };
 
-    locked {
-      bindings = <
- &none  &none &none     &none  &none        &none  &none  &none &none &none
- &none  &none &none     &none  &none        &none  &none  &none &none &none
- &none  &none &none     &none  &none        &none  &none  &none &none &none
-                        &tog LOK  &none        &none  &none  
-      >;
-    };
 
   };
 };
