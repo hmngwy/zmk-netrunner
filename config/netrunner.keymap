@@ -72,7 +72,7 @@
     meta {
       bindings = <
  &tog LOK     &out OUT_TOG &none        &none         &bt BT_CLR         &none            &none   &none        &none  &none
- &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &bt BT_SEL 4       &none            &none   &none        &none  &none
+ &none        &none        &bt BT_SEL 0 &bt BT_SEL 1  &none              &none            &none   &none        &none  &none
  &none        &none        &bootloader  &sys_reset    &ext_power EP_ON   &ext_power EP_ON &sys_reset  &bootloader  &none  &none
                                         &trans        &trans             &trans  &trans
       >;
