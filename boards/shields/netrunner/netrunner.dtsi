@@ -6,6 +6,7 @@
  // Needed if and only if keys property is used
 
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <netrunner-layouts.dtsi>
 
 / {
 
