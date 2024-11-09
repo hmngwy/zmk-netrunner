@@ -6,13 +6,21 @@
  // Needed if and only if keys property is used
 
 #include <dt-bindings/zmk/matrix_transform.h>
-#include <netrunner-layouts.dtsi>
+#include <physical_layouts.dtsi>
 
 / {
 
-    &netrunner_physical_layout: npl {
-        zmk,kscan = &kscan0;
-        zmk,matrix_transform = &default_transform;
+    chosen {
+		zmk,physical-layout = &default_layout;
+		zmk,studio-rpc-uart = &uart1;
+    };
+
+    default_layout: default_layout {
+	compatible = "zmk,physical-layout";
+	display-name = "Default";
+	
+	transform = <&default_transform>;
+	kscan = <&kscan0>;
     };
 
     default_transform: keymap_transform_0 {
@@ -28,5 +36,6 @@
 
         >;
     };
+    
 
 };
