@@ -1,0 +1,10 @@
+#include <physical_layouts.dtsi>
+
+/ {
+    netrunner_physical_layout: netrunner_physical_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "netrunner";
+        transform = <&default_transform>;
+        kscan = <&kscan0>;
+    };
+};
